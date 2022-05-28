@@ -2,5 +2,5 @@
 # A00833018
 # Avance 1
 # Diagrama de clase 
-![](UML_Entrega1.png)
+![](umlEntrega1.png)
 #
