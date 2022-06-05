@@ -26,6 +26,9 @@ public:
     Serie();
     Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio);
     
+    // método deconstructor
+    ~Serie();
+    
     // métodos modificadores
     void setEpisodio(int _index,Episodio _episodio);
     void setCantidad(int _cantidad);
