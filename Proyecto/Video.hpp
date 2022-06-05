@@ -29,6 +29,9 @@ public:
     Video ();
     Video(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio);
     
+    // método deconstructor
+    ~Video();
+    
     // métodos modificadores (sets)
     void setId(string _iD);
     void setTitulo(string _titulo);
