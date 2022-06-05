@@ -20,9 +20,12 @@ private:
 
 public:
     
-    // constructores
+    // métodos constructores
     Pelicula();
     Pelicula(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int _oscares);
+    
+    // método deconstructor
+    ~Pelicula();
     
     // método modificador
     void setOscares(int _oscares);
