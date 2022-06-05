@@ -20,7 +20,12 @@
         calificacion = _calificacion;
     }
 
-    //Métodos modificadores
+    // Método deconstructor
+    Episodio::~Episodio(){
+        // cout << "Se destruyó un obejto Episodio" << endl;
+    }
+
+    // Métodos modificadores
     void Episodio::setTitulo(string _titulo){
         titulo= _titulo;
     }
@@ -31,7 +36,7 @@
         calificacion = _calificacion;
     }
 
-    //Métodos de acceso
+    // Métodos de acceso
     string Episodio::getTitulo(){
         return titulo;
     }
@@ -42,7 +47,7 @@
         return calificacion;
     }
     
-  //Otro Métodos
+  // Otros Métodos
     string Episodio::str(){
-        return "E " + titulo + ',' + to_string(temporada) + ',' + to_string(calificacion);
+        return "E" + titulo + ',' + to_string(temporada) + ',' + to_string(calificacion);
     }
