@@ -1,8 +1,8 @@
 # Avril Michelle Ruiz Martínez
 # A00833018
-## Avance 1
+## Avance 2
 ### Diagrama de clase 
-![](umlEntrega1.png)
+![](Avance2.png)
 
 ### Resultados de los casos de prueba 
 
