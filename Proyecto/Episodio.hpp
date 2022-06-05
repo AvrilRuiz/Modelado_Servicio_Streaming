@@ -25,7 +25,9 @@ public:
     //  métodos constructores - sirven para inicializar los atributos
     Episodio();
     Episodio(string _titulo, int _temporada, int _calificacion);
-
+    
+     // método deconstructor
+    ~Episodio();
 
     // métodos modificadores
     void setTitulo(string _titulo);
