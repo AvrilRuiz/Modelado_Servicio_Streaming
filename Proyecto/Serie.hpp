@@ -29,6 +29,9 @@ public:
     // método deconstructor
     ~Serie();
     
+    // método deconstructor
+    ~Serie();
+    
     // métodos modificadores
     void setEpisodio(int _index,Episodio _episodio);
     void setCantidad(int _cantidad);

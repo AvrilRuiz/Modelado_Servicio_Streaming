@@ -40,9 +40,11 @@ void Episodio::setCalificacion(double _calificacion){
 string Episodio::getTitulo(){
     return titulo;
 }
+
 int Episodio::getTemporada(){
     return temporada;
 }
+
 double Episodio::getCalificacion(){
     return calificacion;
 }

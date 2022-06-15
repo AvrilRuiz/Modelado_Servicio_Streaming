@@ -21,6 +21,11 @@ Serie::~Serie(){
     //cout << "Se destruyó un obejto Serie" << endl;
 }
 
+// deconstructor
+Serie::~Serie(){
+    //cout << "Se destruyó un obejto Serie" << endl;
+}
+
 // métodos modificadores
 void Serie::setEpisodio(int _index, Episodio _episodio) {
     // validar que el _index sea >= 0 and  _index < cantidad
@@ -66,6 +71,7 @@ string Serie::str() {
     for(int indice = 0; indice < cantidad; indice++)
         acumulador = acumulador +  to_string(indice) + ':' + episodios[indice].str() + '\n';
     return "S" + iD + ',' + titulo + ',' + to_string(duracion) + ',' + genero + ',' + to_string(calificacionPromedio) + ',' + to_string(cantidad)  + acumulador;
+
 }
 
 // sobrecarga con función amiga
