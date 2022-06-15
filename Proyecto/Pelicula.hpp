@@ -20,9 +20,12 @@ private:
 
 public:
     
-    // constructores
+    // métodos constructores
     Pelicula();
     Pelicula(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int _oscares);
+    
+    // método deconstructor
+    ~Pelicula();
     
     // método modificador
     void setOscares(int _oscares);
@@ -30,9 +33,9 @@ public:
     // método de acceso
     int getOscares();
     
-    // otro método
+    // otros métodos
     string str();
-    
+    friend ostream & operator << (ostream &out, const Pelicula &p);
 };
     
 
