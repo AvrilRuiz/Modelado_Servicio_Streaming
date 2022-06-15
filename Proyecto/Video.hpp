@@ -52,5 +52,4 @@ public:
     
 };
 
-
 #endif /* Video_hpp */
