@@ -19,26 +19,28 @@ private:
     // atributos
     string titulo;
     int temporada;
-    int calificacion;
+    double calificacion;
 
 public:
-    //  métodos constructores - sirven para inicializar los atributos
+    // métodos constructores - sirven para inicializar los atributos
     Episodio();
-    Episodio(string _titulo, int _temporada, int _calificacion);
+    Episodio(string _titulo, int _temporada, double _calificacion);
 
-
+    // método deconstructor
+    ~Episodio();
+    
     // métodos modificadores
     void setTitulo(string _titulo);
     void setTemporada(int _temporada);
-    void setCalificacion(int _calificacion);
+    void setCalificacion(double _calificacion);
 
     // métodos de acceso
     string getTitulo();
     int getTemporada();
-    int getCalificacion();
+    double getCalificacion();
     
   // otros métodos
-    string str();
+    string str() const;
 
 };
 #endif /* Episodio_hpp */
