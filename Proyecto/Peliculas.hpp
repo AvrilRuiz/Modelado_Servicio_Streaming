@@ -18,7 +18,7 @@ class Peliculas{
     
 private:
     Pelicula *arrPtrPeliculas[MAX_PEL];
-    int cantidad;
+    int cantidad{};
     
 public:
     
