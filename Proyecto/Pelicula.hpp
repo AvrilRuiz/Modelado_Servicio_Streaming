@@ -33,9 +33,9 @@ public:
     // método de acceso
     int getOscares();
     
-    // otro método
+    // otros métodos
     string str();
-    
+    friend ostream & operator << (ostream &out, const Pelicula &p);
 };
     
 

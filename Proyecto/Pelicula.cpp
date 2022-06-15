@@ -36,3 +36,8 @@ string Pelicula::str() {
     return "P" + iD + ',' + titulo + ',' + to_string(duracion) + ',' + genero + ',' + to_string(calificacionPromedio) + ',' + to_string(oscares);
 }
 
+// sobrecarga con función amiga 
+ostream & operator << (ostream &out, const Pelicula &p) {
+    out << "P" << p.iD << ',' << p.titulo << ',' << p.duracion << ',' << p.genero << ',' << p.calificacionPromedio << ',' << p.oscares << endl;
+    return out;
+}

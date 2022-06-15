@@ -10,6 +10,7 @@
 
 //constructores
 Peliculas::Peliculas() {
+    *arrPtrPeliculas = nullptr;
     cantidad = 0;
 }
 
@@ -25,7 +26,7 @@ Pelicula* Peliculas::getPtrPeliculas(string _iD) {
         if (arrPtrPeliculas[index]->getId() == _iD)
             return arrPtrPeliculas[index];
     }
-    return new Pelicula;
+    return nullptr;
 }
 
 int Peliculas::getCantidadPeliculas() {
@@ -58,7 +59,7 @@ void Peliculas::leerArchivo() {
     // line almacena la linea leída, y word la palabra que se saca de line
     string line, word;
     // Abrir archivo de entrada
-    fin.open ("/Users/avrilruiz/Desktop/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Feb-Jun 2022/Programación Orientada a Objetos/Proyecto/Evidencia/Evidencia/Pelicula-1.csv", ios::in);
+    fin.open ("/Users/avrilruiz/Desktop/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Feb-Jun 2022/Programación Orientada a Objetos/Proyecto/Evidencia/Evidencia/Pelicula.csv", ios::in);
     // inicializar el atributo cantidad con 0
     cantidad = 0;
     // lee una línea del archivo y la almacena en line
@@ -82,7 +83,6 @@ void Peliculas::leerArchivo() {
         setPtrPelicula(new Pelicula(row[0], row[1], stoi(row[2]),
                                     row[3], stod(row[4]), stoi(row[5])));
         // Se muestra en consola la separación - BORRAR o COMENTAR cout's
-    
          /*
          cout << "iD:" << row[0] << "\n";
          cout << "Titulo:" << row[1] << "\n";
@@ -94,7 +94,6 @@ void Peliculas::leerArchivo() {
         // desplegamos en consola la película con el método str() de pelicula-BORRAR o COMENTAR cout's
         //cout << "Dentro del objeto:" << arrPtrPeliculas[cantidad]->str() << endl;
         // Incrementar el atributo cantidad para la siquiente pelicula
-        
     }
     fin.close();
     // sale del ciclo cuando va no existen más lineas en el archivo
@@ -112,7 +111,7 @@ void Peliculas::reporteTodasLasPeliculas() {
     if (cantidad > 0){
         
         for(int index = 0; index < cantidad; index++){
-            cout << arrPtrPeliculas[index]->str() << endl;
+            cout << *arrPtrPeliculas[index];
             acumulador = acumulador  + arrPtrPeliculas[index]->getCalificacionPromedio();
         }
         
@@ -126,14 +125,13 @@ void Peliculas::reporteTodasLasPeliculas() {
 void Peliculas::reporteConCalificacion(double _calificacionPromedio) {
     for (int index = 0; index < cantidad; index ++){
         if (arrPtrPeliculas[index]->getCalificacionPromedio() == _calificacionPromedio)
-            cout  << arrPtrPeliculas[index]->str()<< endl;
+            cout  << *arrPtrPeliculas[index];
     }
 }
 
 void Peliculas::reporteGenero(string _genero) {
     for (int index = 0; index < cantidad; index ++){
-        if (arrPtrPeliculas[index]->getGenero() == _genero)
-            cout  << arrPtrPeliculas[index]->str()<< endl;
-    }
+           if (arrPtrPeliculas[index]->getGenero() == _genero)
+               cout  << arrPtrPeliculas[index]->str()<< endl;
+       }
 }
-

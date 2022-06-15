@@ -16,7 +16,7 @@ class Serie : public Video {
     
 private:
     
-    Episodio episodios[5];
+    Episodio episodios[5]{};
     // catidad de episodios de la serie
     int cantidad;
 
@@ -24,7 +24,10 @@ public:
     
     // métodos contructores 
     Serie();
-    Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio);
+    Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int _cantidad);
+    
+    // método deconstructor
+    ~Serie();
     
     // método deconstructor
     ~Serie();
@@ -40,6 +43,8 @@ public:
     // otros métodos
     double calculaCalPromedio();
     string str();
+    friend ostream & operator << (ostream &out, const Serie &s);
+
 };
 
 #endif /* Serie_hpp */

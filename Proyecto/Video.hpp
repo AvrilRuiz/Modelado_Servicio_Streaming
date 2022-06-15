@@ -48,9 +48,8 @@ public:
     
     // otros métodos
     
-    string str();
+    virtual string str();
     
 };
-
 
 #endif /* Video_hpp */
