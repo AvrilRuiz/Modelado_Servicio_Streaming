@@ -28,6 +28,11 @@ Video::Video(string _iD, string _titulo, int _duracion, string _genero, double _
     calificacionPromedio = _calificacionPromedio;
 }
 
+// método deconstructor
+Video::~Video(){
+  // cout << "Se destruyó un obejto Video" << endl;
+}
+
 // métodos modificadores (sets)
 void Video::setId(string _iD) {
     iD = _iD;
@@ -73,5 +78,5 @@ double Video::getCalificacionPromedio() {
 // otros métodos
 
 string Video::str() {
-    return "V " + iD + ',' + titulo + ',' + to_string(duracion) + ',' + genero + ',' + to_string(calificacionPromedio);
+    return "V" + iD + ',' + titulo + ',' + to_string(duracion) + ',' + genero + ',' + to_string(calificacionPromedio);
 }
