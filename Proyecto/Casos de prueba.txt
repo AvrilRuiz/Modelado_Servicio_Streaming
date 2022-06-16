@@ -1,9 +1,8 @@
 ### Resultados de los casos de prueba 
 
+## AVANCE 2
+
 TEST1
-In:
-2
-Out:
 P100,Pulp Fiction,178,accion,9.200000,1
 P101,Titanic,194,romance,8.900000,11
 P102,The Trial of the Chicago 7,129,drama,8.900000,0
@@ -40,29 +39,11 @@ P132,Arrival,118,Ciencia Ficcion,9.400000,1
 P133,Capitán Phillips,134,Drama,7.800000,0
 P134,Inception,162,Accion,9.400000,4
 Promedio:8.64857
-In:
-0
-Out:
-Program ended with exit code: 0
-
 
 TEST2
-In: 
-3
-10
-Out:
 P124,School of Rock,109,comedia,10.000000,0
-In:
-0
-Out:
-Program ended with exit code: 0
-
 
 TEST4
-In: 
-4
-comedia
-Out:
 P103,Forrest Gump,142,comedia,9.300000,6
 P106,Madagascar,86,comedia,8.900000,0
 P116,Bob Esponja: La película,87,comedia,7.000000,0
@@ -72,7 +53,221 @@ P124,School of Rock,109,comedia,10.000000,0
 P127,Jojo Rabbit,108,comedia,7.900000,1
 P128,The big Lebowski,119,comedia,8.100000,0
 P130,Captain Fantastic,119,comedia,7.900000,0
-In:
-0
-Out:
-Program ended with exit code: 0
+
+##AVANCE 3
+
+TEST2
+S500,Berserk,20,fantasia,5,3
+0:EThe Black Swordsman,1,5.000000
+1:EEclipse,1,5.000000
+2:EPerpetual Time,1,5.000000
+
+S501,Luis Miguel,45,drama,4,1
+0:EMamá Mamá,1,4.500000
+
+S502,Big Bang Theory,20,comedia,4.8,1
+0:EMi verdadero lugar de origen,1,4.800000
+
+S503,The office,30,comedia,4.5,1
+0:ENiagara: Part 2,6,4.700000
+
+S504,Friends,20,comedia,4.7,1
+0:EThe One Everybody Finds Out,5,4.600000
+
+S505,Invincible,40,accion,4.8,0
+
+S506,Vikingos,42,accion,4.6,2
+0:EMuerte a la reina,4,4.200000
+1:EBalder,5,4.800000
+
+S507,Legion,60,ficcion,4.1,1
+0:EChapter 1,1,4.500000
+
+S508,Brooklyn Nine-Nine,22,comedia,4.9,3
+0:EPontiac Bandit,1,4.100000
+1:EHalloVeen,5,4.800000
+2:ELights Out,7,4.700000
+
+S509,Modern Family,21,comedia,4.3,3
+0:EFifteen Percent ,1,4.000000
+1:EFarm Strong ,5,4.500000
+2:EDear Beloved Family ,9,3.700000
+
+S510,WandaVision,35,drama,4.1,3
+0:EBreaking the Fourth Wall,1,4.300000
+1:EWe Interrupt this Program,1,4.500000
+2:EDon't touch that Dial,1,3.900000
+
+S511,Teen Wolf,44,fantasia,4.9,2
+0:EAnchors,3,3.500000
+1:EPerishable,4,5.000000
+
+S512,Elite,45,drama,4.3,2
+0:EPolo,3,4.000000
+1:E0 horas desaparecido,2,3.800000
+
+S513,How I Met Your Mother,22,comedia,4.1,1
+0:ESlap Bet,2,4.300000
+
+S514,The falcon and the winter soldier,52,accion,4.4,4
+0:ENew World Order,1,4.600000
+1:EThe Star-Spangled Man,1,4.300000
+2:EPower Broker,1,4.700000
+3:EThe Whole World IS Watching,1,5.000000
+
+S515,Community,22,comedia,4,0
+
+S516,Peaky Blinders,55,drama,4.9,3
+0:EBlack Tuesday,5,4.300000
+1:EThe Duel,4,4.500000
+2:EThe Noose,4,4.800000
+
+S517,Formula 1: Drive to Survive,40,accion,4,3
+0:EAll to Play For,1,4.300000
+1:EThe King of Spain,1,4.500000
+2:ERedemption,1,4.000000
+
+S518,Lucifer,43,crimen,4.7,3
+0:ESin-Eater,2,3.200000
+1:EOff the Record,3,4.100000
+2:EOur Mojo,5,3.900000
+
+S519,Doctor Who,45,ficción,3.9,1
+0:EThe Woman Who Fell to Earth ,11,3.500000
+
+Promedio Series:4.45
+
+
+TEST3
+
+S501,Luis Miguel,45,drama,4,1
+0:EMamá Mamá,1,4.500000
+
+S515,Community,22,comedia,4,0
+
+S517,Formula 1: Drive to Survive,40,accion,4,3
+0:EAll to Play For,1,4.300000
+1:EThe King of Spain,1,4.500000
+2:ERedemption,1,4.000000
+
+S502,Big Bang Theory,20,comedia,4.800000,1
+0:EMi verdadero lugar de origen,1,4.800000
+
+S503,The office,30,comedia,4.500000,1
+0:ENiagara: Part 2,6,4.700000
+
+S504,Friends,20,comedia,4.700000,1
+0:EThe One Everybody Finds Out,5,4.600000
+
+S508,Brooklyn Nine-Nine,22,comedia,4.900000,3
+0:EPontiac Bandit,1,4.100000
+1:EHalloVeen,5,4.800000
+2:ELights Out,7,4.700000
+
+S509,Modern Family,21,comedia,4.300000,3
+0:EFifteen Percent ,1,4.000000
+1:EFarm Strong ,5,4.500000
+2:EDear Beloved Family ,9,3.700000
+
+S513,How I Met Your Mother,22,comedia,4.100000,1
+0:ESlap Bet,2,4.300000
+
+S515,Community,22,comedia,4.000000,0
+
+
+TEST4
+
+S500,Berserk,20,fantasia,5,3
+0:EThe Black Swordsman,1,5.000000
+1:EEclipse,1,5.000000
+2:EPerpetual Time,1,5.000000
+
+S501,Luis Miguel,45,drama,4.5,1
+0:EMamá Mamá,1,4.500000
+
+S502,Big Bang Theory,20,comedia,4.8,1
+0:EMi verdadero lugar de origen,1,4.800000
+
+S503,The office,30,comedia,4.7,1
+0:ENiagara: Part 2,6,4.700000
+
+S504,Friends,20,comedia,4.6,1
+0:EThe One Everybody Finds Out,5,4.600000
+
+S505,Invincible,40,accion,-1,0
+
+S506,Vikingos,42,accion,4.5,2
+0:EMuerte a la reina,4,4.200000
+1:EBalder,5,4.800000
+
+S507,Legion,60,ficcion,4.5,1
+0:EChapter 1,1,4.500000
+
+S508,Brooklyn Nine-Nine,22,comedia,4.53333,3
+0:EPontiac Bandit,1,4.100000
+1:EHalloVeen,5,4.800000
+2:ELights Out,7,4.700000
+
+S509,Modern Family,21,comedia,4.06667,3
+0:EFifteen Percent ,1,4.000000
+1:EFarm Strong ,5,4.500000
+2:EDear Beloved Family ,9,3.700000
+
+S510,WandaVision,35,drama,4.23333,3
+0:EBreaking the Fourth Wall,1,4.300000
+1:EWe Interrupt this Program,1,4.500000
+2:EDon't touch that Dial,1,3.900000
+
+S511,Teen Wolf,44,fantasia,4.25,2
+0:EAnchors,3,3.500000
+1:EPerishable,4,5.000000
+
+S512,Elite,45,drama,3.9,2
+0:EPolo,3,4.000000
+1:E0 horas desaparecido,2,3.800000
+
+S513,How I Met Your Mother,22,comedia,4.3,1
+0:ESlap Bet,2,4.300000
+
+S514,The falcon and the winter soldier,52,accion,4.65,4
+0:ENew World Order,1,4.600000
+1:EThe Star-Spangled Man,1,4.300000
+2:EPower Broker,1,4.700000
+3:EThe Whole World IS Watching,1,5.000000
+
+S515,Community,22,comedia,-1,0
+
+S516,Peaky Blinders,55,drama,4.53333,3
+0:EBlack Tuesday,5,4.300000
+1:EThe Duel,4,4.500000
+2:EThe Noose,4,4.800000
+
+S517,Formula 1: Drive to Survive,40,accion,4.26667,3
+0:EAll to Play For,1,4.300000
+1:EThe King of Spain,1,4.500000
+2:ERedemption,1,4.000000
+
+S518,Lucifer,43,crimen,3.73333,3
+0:ESin-Eater,2,3.200000
+1:EOff the Record,3,4.100000
+2:EOur Mojo,5,3.900000
+
+S519,Doctor Who,45,ficción,3.5,1
+0:EThe Woman Who Fell to Earth ,11,3.500000
+
+Promedio Series:3.82833
+
+
+TEST 6
+
+S501,Luis Miguel,45,drama,4.5,1
+0:EMamá Mamá,1,4.500000
+
+S506,Vikingos,42,accion,4.5,2
+0:EMuerte a la reina,4,4.200000
+1:EBalder,5,4.800000
+
+S507,Legion,60,ficcion,4.5,1
+0:EChapter 1,1,4.500000
+
+Opcion Incorrecta
